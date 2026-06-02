@@ -25,37 +25,79 @@ The correction scale plot is intended to show at which scales the one-loop covar
 ```text
 One-Loop-4PCF-Covariance/
 │
-├── Computing_All_Constants/
-│   ├── Precomputation_Basic_Constants.py
-│   ├── precompute_L_tensor_blocks.py
-│   ├── precompute_Modified_J_m_blocks.py
-│   └── precompute_Qbar_SS_blocks.py
-│
-├── Convergence_Computation/
-│   └── Compute_Projected_SS_Convergence.py
-│
 ├── Convergence_Test/
-│
-├── Final_Radial_Integrals/
-│   ├── S_SS_tables_Buildup.py
-│   └── f_integral.py
-│
-├── Intermediate_Radial_Integrals/
-│   ├── Build_h_tables.py
-│   └── Compute_gTable.py
+│   │
+│   ├── Computing_All_Constants/
+│   │   ├── Precomputation_Basic_Constants.py
+│   │   ├── precompute_L_tensor_blocks.py
+│   │   ├── precompute_Modified_J_m_blocks.py
+│   │   └── precompute_Qbar_SS_blocks.py
+│   │
+│   ├── Convergence_Computation/
+│   │   └── Compute_Projected_SS_Convergence.py
+│   │
+│   ├── Figure_outputs/
+│   │   ├── STACKED_FINAL_SS_convergence.pdf
+│   │   ├── ext_000_000_FINAL_plot.pdf
+│   │   ├── ext_110_011_FINAL_plot.pdf
+│   │   ├── ext_110_101_FINAL_plot.pdf
+│   │   └── ext_110_110_FINAL_plot.pdf
+│   │
+│   ├── Final_Radial_Integrals/
+│   │   ├── S_SS_tables_Buildup.py
+│   │   └── f_integral.py
+│   │
+│   └── Intermediate_Radial_Integrals/
+│       ├── Build_h_tables.py
+│       └── Compute_gTable.py
 │
 ├── One_Loop_Correction_Script/
 │   └── Script/
 │       └── NLO_Correction_Scale_Computation.ipynb
 │
 ├── Radial_Integral_Plotting/
-│
-├── Figure_outputs/
-│
-├── 2nd_Order_Cov_Figures/
-│
-├── intermediate_radial_integrals/
-│
-├── plotting_script/
+│   │
+│   ├── plotting_script/
+│   │
+│   ├── intermediate_radial_integrals/
+│   │
+│   └── 2nd_Order_Cov_Figures/
 │
 └── README.md
+```
+
+## Directory descriptions
+
+### `Convergence_Test/`
+
+This directory contains the scripts and outputs used to reproduce selected convergence-test figures from the papers. It includes scripts for precomputing constants, computing intermediate radial-integral tables, building selected final radial-integral quantities, running convergence tests, and storing the resulting figure outputs.
+
+This directory is organized into:
+
+- `Computing_All_Constants/`: scripts for precomputing selected angular and tensorial constants.
+- `Intermediate_Radial_Integrals/`: scripts for computing selected intermediate radial-integral tables.
+- `Final_Radial_Integrals/`: scripts for computing selected final radial-integral quantities.
+- `Convergence_Computation/`: scripts for running convergence tests.
+- `Figure_outputs/`: generated convergence-test and diagnostic figures.
+
+### `One_Loop_Correction_Script/`
+
+This directory contains the notebook used to generate the one-loop correction scale plot.
+
+The main file is:
+
+- `One_Loop_Correction_Script/Script/NLO_Correction_Scale_Computation.ipynb`
+
+This notebook computes and visualizes the approximate fractional size of the one-loop covariance correction relative to the Gaussian covariance as a function of scale \(R\). The resulting figure shows the scale at which the one-loop correction is expected to reach a given percentage of the Gaussian covariance.
+
+### `Radial_Integral_Plotting/`
+
+This directory contains files used to reproduce selected radial-integral plots from the papers. It is organized into:
+
+- `plotting_script/`: plotting scripts used to generate selected radial-integral figures.
+- `intermediate_radial_integrals/`: intermediate radial-integral files used by the plotting scripts.
+- `2nd_Order_Cov_Figures/`: generated figures associated with selected second-order covariance terms.
+
+
+
+
