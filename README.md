@@ -88,7 +88,7 @@ The main file is:
 
 - `One_Loop_Correction_Script/Script/NLO_Correction_Scale_Computation.ipynb`
 
-This notebook computes and visualizes the approximate fractional size of the one-loop covariance correction relative to the Gaussian covariance as a function of scale \(R\). The resulting figure shows the scale at which the one-loop correction is expected to reach a given percentage of the Gaussian covariance.
+This notebook computes and visualizes the approximate fractional size of the one-loop covariance correction relative to the Gaussian covariance as a function of scale \(R\). The resulting figure shows the scale at which the one-loop correction is expected to induce corrections of 10%, 20%, 30%, 40%, and 50% relative to the Gaussian covariance.
 
 ### `Radial_Integral_Plotting/`
 
