@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1257469788.svg)](https://doi.org/10.5281/zenodo.20528953)
+
 # One-Loop 4PCF Covariance Figure Reproduction Code
 
 This repository contains scripts used to reproduce selected numerical figures from the papers:
